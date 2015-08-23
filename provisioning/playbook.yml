@@ -49,3 +49,6 @@
     - { role: geerlingguy.java, when: '"solr" in installed_extras' }
     - { role: geerlingguy.solr, when: '"solr" in installed_extras' }
     - { role: geerlingguy.drupal, when: '"drupal" in installed_extras' }
+    
+  tasks:
+    - include: tasks/www.yml    
