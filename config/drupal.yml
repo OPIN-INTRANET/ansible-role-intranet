@@ -27,7 +27,7 @@ drupal_mysql_password: root
 drupal_mysql_database: drupal
 
 # The Drupal git url from which Drupal will be cloned.
-drupal_repo_url: "https://github.com/OPIN-INTRANET/checkpoint.git"
+drupal_repo_url: "https://github.com/OPIN-INTRANET/opin-intranet.git"
 
 # Whether to update the repo above to the latest commit in the branch identified
 # by `drupal_core_version` (the git tag or branch) whenever this playbook runs.

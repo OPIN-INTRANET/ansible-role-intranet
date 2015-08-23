@@ -32,6 +32,6 @@ installed_extras:
   # - selenium
   - xdebug
   - xhprof
-  # - nodejs
-  # - varnish  
+  - nodejs
+  # - varnish
   - drupal
