@@ -1,6 +1,6 @@
 # Checkpoint
 
-[![Build Status](https://travis-ci.org/OPIN-CA/ansible-role-checkpoint.svg?branch=master)](https://travis-ci.org/OPIN-CA/ansible-role-checkpoint)
+[![Build Status](https://magnum.travis-ci.com/OPIN-INTRANET/opin-intranet.svg?token=XXsFCeFBRo6GzEMc4tx5)](https://magnum.travis-ci.com/OPIN-INTRANET/opin-intranet)
 
 http://www.opin.ca
 
