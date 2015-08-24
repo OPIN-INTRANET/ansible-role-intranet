@@ -1,6 +1,6 @@
 ---
 # PHP Configuration. 
-php_version: "5.5"
+php_version: "5.4"
 php_memory_limit: "1024M"
 php_display_errors: "On"
 php_display_startup_errors: "On"
