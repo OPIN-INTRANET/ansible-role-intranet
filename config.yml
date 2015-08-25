@@ -1,7 +1,7 @@
 ---
 # Vagrant hostname and IP configuration.
-vagrant_hostname: local.checkpoint.dev
-vagrant_ip: 10.10.10.10
+vagrant_hostname: local.last.dev
+vagrant_ip: 10.10.10.30
 vagrant_user: vagrant
 vagrant_home: /home/vagrant
 vagrant_webroot: /var/www/drupal
@@ -23,15 +23,14 @@ ansible_os_family: Debian
 
 # Server Extras
 installed_extras:
-  - drush
   - mailhogx
   - memcached
   - phpmyadmin
   - pimpmylog
-  - solr
+  # - solr
   # - selenium
   - xdebug
   - xhprof
-  - nodejs
+  # - nodejs
   # - varnish
   - drupal
