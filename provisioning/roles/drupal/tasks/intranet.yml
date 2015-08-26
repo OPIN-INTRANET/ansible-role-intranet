@@ -1,0 +1,80 @@
+---
+# Intranet Installation
+
+  # Intranet: Common
+- name: Check out commom module
+  git: >
+    repo={{ common_repo_url }}
+    version={{ common_version }}
+    update={{ common_keep_updated }}
+    dest={{ drupal_core_path }}/sites/all/modules/features/common/
+  when: '"common" in intranet_modules'
+
+# Intranet: Research
+- name: Check out research module
+  git: >
+    repo={{ research_repo_url }}
+    version={{ research_version }}
+    update={{ research_keep_updated }}
+    dest={{ drupal_core_path }}/sites/all/modules/features/research/
+  when: '"research" in intranet_modules'
+
+# Intranet: Sales
+- name: Check out sales module
+  git: >
+    repo={{ sales_repo_url }}
+    version={{ sales_version }}
+    update={{ sales_keep_updated }}
+    dest={{ drupal_core_path }}/sites/all/modules/features/sales/
+  when: '"sales" in intranet_modules'
+
+# Intranet: Team Members
+- name: Check out team members module
+  git: >
+    repo={{ team_members_repo_url }}
+    version={{ team_members_version }}
+    update={{ team_members_keep_updated }}
+    dest={{ drupal_core_path }}/sites/all/modules/features/team_members/
+  when: '"team_members" in intranet_modules'
+
+# Intranet: Projects
+- name: Check out projects module
+  git: >
+    repo={{ projects_repo_url }}
+    version={{ projects_version }}
+    update={{ projects_keep_updated }}
+    dest={{ drupal_core_path }}/sites/all/modules/features/projects/
+  when: '"projects" in intranet_modules'
+
+# Intranet: Contracts
+- name: Check out contracts module
+  git: >
+    repo={{ contracts_repo_url }}
+    version={{ contracts_version }}
+    update={{ contracts_keep_updated }}
+    dest={{ drupal_core_path }}/sites/all/modules/features/contracts/
+  when: '"contracts" in intranet_modules'
+
+# Intranet: Finance
+- name: Check out finance module
+  git: >
+    repo={{ finance_repo_url }}
+    version={{ finance_version }}
+    update={{ finance_keep_updated }}
+    dest={{ drupal_core_path }}/sites/all/modules/features/finance/
+  when: '"finance" in intranet_modules'
+
+  # Intranet: Clients
+- name: Check out clients module
+  git: >
+    repo={{ clients_repo_url }}
+    version={{ clients_version }}
+    update={{ clients_keep_updated }}
+    dest={{ drupal_core_path }}/sites/all/modules/features/clients/
+  when: '"clients" in intranet_modules'
+
+- name: Install modules with drush.
+  command: >
+    drush en -y {{ intranet_modules | join(" ") }}
+    chdir={{ drupal_core_path }}  
+  ignore_errors: yes

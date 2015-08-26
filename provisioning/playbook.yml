@@ -7,6 +7,7 @@
     - ../config/apache.yml
     - ../config/composer.yml
     - ../config/drupal.yml
+    - ../config/intranet.yml
     - ../config/firewall.yml
     - ../config/mysql.yml
     - ../config/nodejs.yml
@@ -36,7 +37,7 @@
     - { role: Stouts.nodejs, when: '"nodejs" in installed_extras' }
 
     # Conditionally-installed roles
-    - { role: geerlingguy.memcached, when: '"memcached" in installed_extras' }    
+    - { role: geerlingguy.memcached, when: '"memcached" in installed_extras' }
     - { role: geerlingguy.php-memcached, when: '"memcached" in installed_extras' }
     - { role: geerlingguy.php-xdebug, when: '"xdebug" in installed_extras' }
     - { role: geerlingguy.php-xhprof, when: '"xhprof" in installed_extras' }

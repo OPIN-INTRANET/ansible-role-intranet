@@ -1,7 +1,7 @@
 ---
 # Vagrant hostname and IP configuration.
-vagrant_hostname: local.last.dev
-vagrant_ip: 10.10.10.30
+vagrant_hostname: local.intranet.dev
+vagrant_ip: 10.10.10.10
 vagrant_user: vagrant
 vagrant_home: /home/vagrant
 vagrant_webroot: /var/www/drupal
@@ -34,3 +34,14 @@ installed_extras:
   # - nodejs
   # - varnish
   - drupal
+
+# Intranet Modules
+intranet_modules:
+  - common  
+  - sales
+  # - research  
+  # - team_members
+  # - projects
+  # - contracts  
+  # - finance
+  # - clients

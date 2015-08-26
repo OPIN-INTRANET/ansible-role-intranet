@@ -15,23 +15,23 @@
   apt_repository: repo='ppa:ondrej/php-7.0'
   when: php_version == "7.0"
   tags: [phpv]
-  
+
 # SSH Keys
 - name: Generate key for Github server
   shell: ssh-keyscan github.com
   register: github_key
-  tags: [sshkeys]   
+  tags: [sshkeys]
 
 - name: Add Github to known hosts.
   known_hosts: path="/etc/ssh/ssh_known_hosts"
                host="github.com"
                key="{{ github_key.stdout }}"
-  tags: [sshkeys]                
+  tags: [sshkeys]
 
 - name: Generate key for Bitbucket server
   shell: ssh-keyscan bitbucket.org
   register: bitbucket_key
-  tags: [sshkeys]   
+  tags: [sshkeys]
 
 - name: Add Bitbucket to known hosts.
   known_hosts: path="/etc/ssh/ssh_known_hosts"

@@ -1,0 +1,42 @@
+---
+# Intranet Configuration
+
+# Research
+research_repo_url: "https://github.com/OPIN-INTRANET/research.git"
+research_version: "HEAD"
+research_keep_updated: no
+
+# Sales
+sales_repo_url: "https://github.com/OPIN-INTRANET/sales.git"
+sales_version: "HEAD"
+sales_keep_updated: no
+
+# Team Members
+team_members_repo_url: "https://github.com/OPIN-INTRANET/team_members.git"
+team_members_version: "HEAD"
+team_members_keep_updated: no
+
+# Projects
+projects_repo_url: "https://github.com/OPIN-INTRANET/projects.git"
+projects_version: "HEAD"
+projects_keep_updated: no
+
+# Contracts
+contracts_repo_url: "https://github.com/OPIN-INTRANET/contracts.git"
+contracts_version: "HEAD"
+contracts_keep_updated: no
+
+# Finance
+finance_repo_url: "https://github.com/OPIN-INTRANET/finance.git"
+finance_version: "HEAD"
+finance_keep_updated: no
+
+# Clients
+clients_repo_url: "https://github.com/OPIN-INTRANET/clients.git"
+clients_version: "HEAD"
+clients_keep_updated: no
+
+# Common
+common_repo_url: "https://github.com/OPIN-INTRANET/common.git"
+common_version: "HEAD"
+common_keep_updated: no
