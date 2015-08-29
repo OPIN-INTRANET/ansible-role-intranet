@@ -1,4 +1,4 @@
-# Checkpoint
+# Intranet
 
 [![Build Status](https://travis-ci.org/OPIN-INTRANET/ansible-role-intranet.svg)](https://travis-ci.org/OPIN-INTRANET/ansible-role-intranet)
 
