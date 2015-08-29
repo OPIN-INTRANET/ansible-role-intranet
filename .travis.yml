@@ -6,12 +6,13 @@ env:
   - PLAYBOOK=provisioning/playbook.yml REQUIREMENTS=provisioning/requirements.txt
 
 before_install:
-  - sudo add-apt-repository ppa:ondrej/php5 -y
-  - sudo apt-get update -q
-  - sudo apt-get update -qq
-  - sudo apt-get install -qq python-apt python-pycurl
+ - sudo apt-get update -qq
+ - sudo apt-get install -qq python-apt python-pycurl
 
-  # Remove MySQL. Completely and totally.
+  # Add PHP repository
+  - sudo add-apt-repository ppa:ondrej/php5 -y
+
+  # Remove MySQL
   - sudo apt-get remove --purge 'mysql*'
   - sudo apt-get autoremove
   - sudo apt-get autoclean

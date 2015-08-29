@@ -30,9 +30,4 @@ apt_default_packages:         # List of packages which be installed
   - sysstat
   - vim
   - wget
-apt_packages:         # Set list of additional packages which will be installed
-  - acl
-  - curl
-  - python-apt
-  - python-pycurl
-  - php5-readline
+apt_packages: []              # Set list of additional packages which will be installed
