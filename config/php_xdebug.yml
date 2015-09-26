@@ -1,6 +1,6 @@
 ---
 # XDebug
-php_xdebug_version: 2.2.5
+php_xdebug_version: 2.3.2
 
 php_xdebug_default_enable: 1
 php_xdebug_coverage_enable: 1

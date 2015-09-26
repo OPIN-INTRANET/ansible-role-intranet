@@ -1,14 +1,14 @@
 ---
 # Vagrant hostname and IP configuration.
 vagrant_hostname: local.intranet.dev
-vagrant_ip: 10.10.10.10
+vagrant_ip: 10.10.10.11
 vagrant_user: vagrant
 vagrant_home: /home/vagrant
 vagrant_webroot: /var/www/drupal
 
 # Synced Folders
 vagrant_synced_folders:
-  - local_path: ~/Sites/checkpoint
+  - local_path: ~/Sites/intranet
     destination: /var/www
     id: drupal
     type: nfs
@@ -27,18 +27,18 @@ installed_extras:
   - memcached
   - phpmyadmin
   - pimpmylog
-  # - solr
-  # - selenium
   - xdebug
   - xhprof
+  - drupal
+  # - solr
+  # - selenium
   # - nodejs
   # - varnish
-  - drupal
 
 # Intranet Modules
 intranet_modules:
   - common  
-  - sales
+  # - sales
   # - research  
   # - team_members
   # - projects
