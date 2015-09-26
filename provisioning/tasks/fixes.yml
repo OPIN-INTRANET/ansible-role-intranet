@@ -41,12 +41,3 @@
 - name: Restart AppArmor if necessary.
   service: name=apparmor state=restarted
   when: mysql_apparmor.changed
-
-# Fix: https://www.drupal.org/node/1599774
-#- name: Download drupal core patch.
-#  get_url:
-#    url: https://www.drupal.org/files/issues/1599774-htaccess-apache-2.4-60-D7-backport.patch
-#    dest: /tmp/1599774-htaccess-apache-2.4-60-D7-backport.patch
-
-#- name: Apply the patch from the drupal docroot.
-#  shell: "patch -p1 < /tmp/1599774-htaccess-apache-2.4-60-D7-backport.patch chdir={{ drupal_core_path }}"  
