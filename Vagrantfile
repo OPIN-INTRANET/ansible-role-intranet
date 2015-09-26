@@ -69,6 +69,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   # Set the name of the VM. See: http://stackoverflow.com/a/17864388/100134
-  config.vm.define :checkpoint do |checkpoint_config|
+  config.vm.define :intranet do |intranet_config|
   end
 end
